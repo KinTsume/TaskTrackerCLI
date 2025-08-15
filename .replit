@@ -1,5 +1,5 @@
 entrypoint = "main.sh"
-modules = ["bash"]
+modules = ["bash", "nodejs-24"]
 
 [nix]
 channel = "stable-24_05"
@@ -7,3 +7,14 @@ channel = "stable-24_05"
 [deployment]
 run = ["bash", "main.sh"]
 deploymentTarget = "cloudrun"
+
+[workflows]
+
+[[workflows.workflow]]
+name = "Run Console"
+mode = "sequential"
+author = 38192233
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "main.sh"
