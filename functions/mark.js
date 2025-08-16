@@ -1,4 +1,4 @@
-import { UpdateFile, GetTaskFromFileById } from "./fileSystem.js"
+import { UpdateTaskOnFile, GetTaskFromFileById } from "../fileSystem.js"
 
 export default function MarkTask(id, status){
   if(id === undefined) {
@@ -44,6 +44,6 @@ export default function MarkTask(id, status){
 
   task.status = status
 
-  UpdateFile(taskId, task)
+  UpdateTaskOnFile(taskId, task)
   
 }

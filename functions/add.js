@@ -1,6 +1,6 @@
 
 import fs from "fs"
-import { CreateFile, AddToFile } from "./fileSystem.js"
+import { CreateFile, AddTaskToFile } from "../fileSystem.js"
 
 const filePath = "./tasks.json"
 
@@ -45,5 +45,5 @@ function CreateNewTask(description){
     updatedAt: Date.now()
   }
 
-  AddToFile(newTask)
+  AddTaskToFile(newTask)
 }

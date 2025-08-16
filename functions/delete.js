@@ -1,5 +1,5 @@
 
-import { UpdateFile } from "./fileSystem.js"
+import { UpdateTaskOnFile } from "../fileSystem.js"
 import ListTasks from "./list.js"
 
 export default function DeleteTask(id){
@@ -16,6 +16,6 @@ export default function DeleteTask(id){
     return
   }
 
-  UpdateFile(taskId)  
+  UpdateTaskOnFile(taskId)  
   ListTasks()
 }

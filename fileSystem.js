@@ -17,7 +17,7 @@ export function GetTaskFromFileByStatus(status){
   return tasks
 }
 
-export function AddToFile(data) {
+export function AddTaskToFile(data) {
   const tasks = getFileData()
 
   data.id = tasks.length
@@ -29,7 +29,7 @@ export function AddToFile(data) {
   saveFileData(newData)
 }
 
-export function UpdateFile(id, data){
+export function UpdateTaskOnFile(id, data){
   const tasks = getFileData()
 
   if(data){

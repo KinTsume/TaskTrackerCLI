@@ -1,4 +1,4 @@
-import { UpdateFile, GetTaskFromFileById } from "./fileSystem.js";
+import { UpdateTaskOnFile, GetTaskFromFileById } from "../fileSystem.js";
 
 export default function UpdateTask(id, newDescription) {
   const taskId = parseInt(id);
@@ -24,7 +24,7 @@ export default function UpdateTask(id, newDescription) {
     return;
   }
 
-  UpdateFile(taskId, {
+  UpdateTaskOnFile(taskId, {
     ...task,
     description: newDescription,
     updatedAt: Date.now(),
