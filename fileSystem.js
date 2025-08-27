@@ -39,7 +39,6 @@ export function UpdateTaskOnFile(id, data){
   }
 
   tasks.splice(id, 1)
-  console.log("Removing...")
 
   let index = 0
   

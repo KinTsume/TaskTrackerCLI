@@ -17,4 +17,8 @@ author = 38192233
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "main.sh"
+args = "chmod +x main.sh"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "./main.sh"

@@ -7,10 +7,18 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "bin": {
     "tasktracker": "./index.js"
   },
-  "types": "module"
+  "types": "module",
+  "dependencies": {
+    "jest": "^30.0.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.3",
+    "@babel/preset-env": "^7.28.3",
+    "babel-jest": "^30.0.5"
+  }
 }
