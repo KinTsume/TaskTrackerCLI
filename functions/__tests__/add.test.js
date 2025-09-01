@@ -1,4 +1,3 @@
-import { afterEach, beforeEach, expect, it, jest, describe } from "@jest/globals";
 import { CreateFile, AddTaskToFile } from "../../fileSystem.js";
 import fs, { existsSync } from "fs";
 import AddTask from "../add.js";
@@ -15,7 +14,7 @@ jest.mock("fs", () => ({
 }))
 
 describe("add.js", () => {
-  it("Should log an error message if no description is provided", () => {
+  it("Should log an error message if given no description", () => {
     AddTask()
 
     expect(consoleSpy).toHaveBeenCalledWith("You need to provide a description")
