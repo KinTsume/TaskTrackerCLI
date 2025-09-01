@@ -39,29 +39,23 @@ function listAll(){
   console.log("------------------------------------------\n")
   
   console.log("Todo V")
-  if(todoTasks.length > 0){
-    for(let i = 0; i < 10; i++){
-      if(i >= todoTasks.length) break;
-      console.log(`---> ${todoTasks[i].id} - ${todoTasks[i].description}`)
-    }
+  for(let i = 0; i < 10; i++){
+    if(i >= todoTasks.length) break;
+    console.log(`---> ${todoTasks[i].id} - ${todoTasks[i].description}`)
   }
   console.log("\n")
 
   console.log("Done V")
-  if(doneTasks.length > 0){
-    for(let i = 0; i < 10; i++){
-      if(i >= doneTasks.length) break;
-      console.log(`---> ${doneTasks[i].id} - ${doneTasks[i].description}`)
-    }
+  for(let i = 0; i < 10; i++){
+    if(i >= doneTasks.length) break;
+    console.log(`---> ${doneTasks[i].id} - ${doneTasks[i].description}`)
   }
   console.log("\n")
   
   console.log("In Progress V")
-  if(inProgressTasks.length > 0){
-    for(let i = 0; i < 10; i++){
-      if(i >= inProgressTasks.length) break;
-      console.log(`---> ${inProgressTasks[i].id} - ${inProgressTasks[i].description}`)
-    }
+  for(let i = 0; i < 10; i++){
+    if(i >= inProgressTasks.length) break;
+    console.log(`---> ${inProgressTasks[i].id} - ${inProgressTasks[i].description}`)
   }
   console.log("\n")
   

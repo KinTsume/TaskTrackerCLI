@@ -1,6 +1,12 @@
 import { UpdateTaskOnFile, GetTaskFromFileById } from "../fileSystem.js";
 
 export default function UpdateTask(id, newDescription) {
+  
+  if(id == undefined){
+    console.log("Please provide an id")
+    return
+  }
+  
   const taskId = parseInt(id);
 
   if (isNaN(taskId)) {
